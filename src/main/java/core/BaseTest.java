@@ -59,8 +59,6 @@ public class BaseTest {
             page.clickRegisterNewUser();
             Thread.sleep(2000);
             //CLICAR EM ADD
-
-
             //TODO: Aguardar liberação de tela registrar usuário
             return;
         }
