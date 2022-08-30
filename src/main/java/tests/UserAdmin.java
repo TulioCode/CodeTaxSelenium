@@ -36,6 +36,7 @@ public class UserAdmin extends BaseTest {
         Thread.sleep(2000);
         page.clickRegisterNewUser();
         Thread.sleep(2000);
+        page.insertImg();
         page.inputNameNewUser("User Teste By Selenium ADM" + DateUtils.formattedDate(date));
         page.inputEmailNewUser(RandomUser.RandomTestEmail());
         page.inputPhoneNewUser(RandomInformationUtils.Tel());

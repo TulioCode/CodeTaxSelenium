@@ -61,4 +61,9 @@ public class UserAdminPage extends BasePage {
         clickButton(By.xpath("/html/body/div[3]/div[1]/div[3]/div[2]/button[3]"));
     }
 
+    public void insertImg() {
+        uploadFile(By.xpath("//*[@id=\"fileButton\"]/input"), System.getProperty("user.dir") + "\\src\\main\\resources\\Images\\roboPerfilSelenium.jpg");
+        //*[@id="fileButton"]/input
+    }
+
 }
