@@ -1,10 +1,9 @@
 package suites;
 
-import org.junit.BeforeClass;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import tests.ImportInvoice;
-import tests.Landing;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -13,9 +12,9 @@ import tests.Landing;
 
 public final class ImportSuite {
 
-    @BeforeClass
+    @AfterClass
     public static void apagaUser(){
-        //Lugar usado para apagar usuário criado na sessão (preservar massa de dados)
+        //TODO:Lugar usado para apagar usuário criado na sessão (preservar massa de dados)
     }
 
 }

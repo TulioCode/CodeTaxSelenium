@@ -44,8 +44,11 @@ public class UserAdminPage extends BasePage {
         }
     }
 
-    public void inputPasswordNewUser(String password){
+    public void inputPassword(String password){
         write(By.id("password"), password);
+    }
+
+    public void inputConfirmPassword(String password){
         write(By.id("repeatPassword"), password);
     }
 
@@ -66,4 +69,31 @@ public class UserAdminPage extends BasePage {
         //*[@id="fileButton"]/input
     }
 
+    public String nameMsg(){
+        return getText(By.id("nameMessage"));
+    }
+
+    public String emailMsg(){
+        return getText(By.id("emailMessage"));
+    }
+
+    public String TelMsg(){
+        return getText(By.id("phoneMessage"));
+    }
+
+    public String CPFCNPJMsg(){
+        return getText(By.id("cpfCnpjMessage"));
+    }
+
+    public String StatusMsg(){
+        return getText(By.id("statusMessage"));
+    }
+
+    public String PasswordMsg(){
+        return getText(By.id("passwordMessage"));
+    }
+
+    public String ConfirmPasswordMsg(){
+        return getText(By.id("repeatPasswordMessage"));
+    }
 }
