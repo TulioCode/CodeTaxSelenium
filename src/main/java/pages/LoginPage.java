@@ -26,20 +26,4 @@ public class LoginPage extends BasePage {
         clickButton(By.className("submit-button"));
     }
 
-    //Realização de um cadastro
-    public void openMenu(){
-        clickButton(By.xpath("//*[@id=\"registration\"]/div[1]/img"));
-
-    }
-    public void openRegisterSelect(){
-        clickButton(By.xpath("/html/body/nav/div/div[2]/a[7]/span"));
-    }
-    public void openRegisterUser(){
-        clickButton(By.xpath("//*[@id=\"containerRegistration\"]/a[4]/span"));
-    }
-
-    public void clickRegisterNewUser(){
-        clickButton(By.xpath("/html/body/section[2]/div/div/div/div/div[2]/a"));
-    }
-
 }

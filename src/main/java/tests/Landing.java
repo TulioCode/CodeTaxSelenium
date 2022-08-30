@@ -27,31 +27,21 @@ import static utils.DateUtils.formattedDate;
 public class Landing extends BaseTest {
 
     LandingPage page = new LandingPage();
-
+    WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 20);
 
     /**
-     * Teste básico para registrar um user via área não logada
+     * Teste básico para registrar
      *
      * @author Tulio Lascalla
      * @date 11/08/2021
      */
     @Test
-    public void userNotLoggedIn_Home() throws InterruptedException {
+    public void userNotLoggedIn_Home() {
 
+        Assert.assertEquals("Para quem investe na bolsa valores", page.HomeSubLabel());
         page.clickRegister();
-        Date date = DateUtils.dateWithDaysDifference(0);
-        page.addNome("teste by Selenium" + formattedDate(date));
-        page.addEmail("testeSelenium" + formattedDate(date) + "@codebit.com.br");
-        String CPF = RandomInformationUtils.cpf();
-        page.addCPF(CPF);
-        String Telefone = RandomInformationUtils.Tel();
-        page.addTelefone(Telefone);
-        page.addPassword("Codebit@123");
-        page.addPasswordConfirm("Codebit@123");
-        page.clickBrokerageFirms();
-        page.confirmTerms();
-        page.reCaptchConfirm();
-        page.confirmRegister();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"signupForm\"]/div[1]/h1")));
+        Assert.assertEquals("FAÇA SEU CADASTRO", page.RegisterLabel());
     }
 
     /**
@@ -69,7 +59,6 @@ public class Landing extends BaseTest {
         //clica em cadastre-se
         page.clickRegisterWhoWeAre();
         //confere se redirecionou para página
-        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"signupForm\"]/div[1]/h1")));
         Assert.assertEquals("FAÇA SEU CADASTRO", page.RegisterLabel());
     }
@@ -85,7 +74,6 @@ public class Landing extends BaseTest {
         page.navigateaNotLogged("knowMore");
         Assert.assertEquals("Saiba Mais", page.titleKnowMore());
         page.clickRegisterKnowMore();
-        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"signupForm\"]/div[1]/h1")));
         Assert.assertEquals("FAÇA SEU CADASTRO", page.RegisterLabel());
     }
@@ -100,7 +88,6 @@ public class Landing extends BaseTest {
     public void userNotLoggedIn_Price(){
         page.navigateaNotLogged("price");
         page.clickRegisterPrice();
-        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"signupForm\"]/div[1]/h1")));
         Assert.assertEquals("FAÇA SEU CADASTRO", page.RegisterLabel());
     }

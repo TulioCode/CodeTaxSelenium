@@ -13,7 +13,7 @@ import tests.Landing;
 })
 
 
-public final class LandingSuites {
+public final class LandingSuite {
 
     @BeforeClass
     public static void apagaUser(){

@@ -15,13 +15,13 @@ public class LandingPage extends BasePage {
 
     //navigate
     public void navigateaNotLogged(String were){
-        if(were == "whoWeAre"){
+        if(were.equals("whoWeAre") ){
             clickButton(By.xpath("/html/body/div[1]/section/header/div/div/div[2]/a[1]"));
         }
-        if(were == "knowMore"){
+        if(were.equals("knowMore")){
             clickButton(By.xpath("/html/body/div[1]/section/header/div/div/div[2]/a[2]"));
         }
-        if(were == "price"){
+        if(were.equals("price")){
             clickButton(By.xpath("/html/body/div[1]/section/header/div/div/div[2]/a[3]"));
         }
     }
@@ -107,6 +107,11 @@ public class LandingPage extends BasePage {
     public String RegisterLabel(){
         return getText(By.xpath("//*[@id=\"signupForm\"]/div[1]/h1"));
     }
+
+    public String HomeSubLabel(){
+        return getText(By.xpath("//*[@id=\"home\"]/section/div/div/div[1]/h2"));
+    }
+
 
 
 }

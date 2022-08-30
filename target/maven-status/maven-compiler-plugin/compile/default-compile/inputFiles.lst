@@ -10,8 +10,11 @@ C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\pages\DataTestPage.jav
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\core\DriverFactory.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\tests\Landing.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\core\BaseTest.java
-C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\suites\LandingSuites.java
+C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\suites\AdmSuite.java
+C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\suites\LandingSuite.java
+C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\pages\UserAdminPage.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\pages\ImportInvoicePage.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\utils\RandomUser.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\core\BasePage.java
+C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\tests\UserAdmin.java
 C:\Users\tulio\IdeaProjects\CodeTaxSelenium\src\main\java\utils\DateUtils.java

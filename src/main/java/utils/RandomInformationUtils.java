@@ -24,8 +24,7 @@ public class RandomInformationUtils extends BasePage {
     public static String Tel() {
         Random rand = new Random();
         int num = rand.nextInt();
-        String numTel = String.valueOf(num);
-        return numTel;
+        return num + "11";
     }
 
     public static String cpf() throws InterruptedException {
@@ -38,11 +37,12 @@ public class RandomInformationUtils extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 
-        List<String> wH = new ArrayList<String>(driver.getWindowHandles());
+        List<String> wH = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(wH.get(1));
 
         driver.get("https://www.4devs.com.br/gerador_de_cpf");
 
+        //Demora da coleta do cpf: TODO:Refatorar Baixa
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("bt_gerar_cpf")));
         driver.findElement(By.id("bt_gerar_cpf")).click();
         Thread.sleep(1000);
