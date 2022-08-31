@@ -56,7 +56,7 @@ public class UserAdmin extends BaseTest {
     }
 
     @Test
-    public void validationSamePasswordRegister() throws InterruptedException {
+    public void validationSamePasswordRegister() {
         page.insertImg();
         page.inputNameNewUser("User Teste By Selenium ADM" + DateUtils.formattedDate(date));
         page.inputEmailNewUser(RandomUser.RandomTestEmail());
@@ -69,7 +69,7 @@ public class UserAdmin extends BaseTest {
     }
 
     @Test
-    public void createUserAdmin() throws InterruptedException {
+    public void createUserAdmin_createDataUser() throws InterruptedException {
         page.insertImg();
         page.inputNameNewUser("User Teste By Selenium ADM" + DateUtils.formattedDate(date));
         page.inputEmailNewUser(RandomUser.RandomTestEmail());
@@ -86,7 +86,7 @@ public class UserAdmin extends BaseTest {
     }
 
     @Test
-    public void createUserNormal() throws InterruptedException {
+    public void createUserNormal_createDataUser() throws InterruptedException {
         page.inputNameNewUser("User Teste By Selenium ADM" + DateUtils.formattedDate(date));
         page.inputEmailNewUser(RandomUser.RandomTestEmail());
         page.inputPhoneNewUser(RandomInformationUtils.Tel());

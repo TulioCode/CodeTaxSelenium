@@ -71,7 +71,6 @@ public class LandingPage extends BasePage {
     public void addEmail(String email){
         write(By.id("email"), email);
     }
-    //TODO: Pensar em meio para inserir variedade de cpfs
     public void addCPF(String cpf){
         write(By.id("cpfCnpj"), cpf);
     }

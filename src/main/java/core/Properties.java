@@ -3,6 +3,8 @@ package core;
 public class Properties {
 	
 	public static boolean CLOSE_BROWSER = true;
+
+	public static boolean DELETE_USER = true;
 	
 	public static Browsers BROWSER = Browsers.CHROME;
 

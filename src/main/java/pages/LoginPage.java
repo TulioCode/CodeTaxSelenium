@@ -10,6 +10,10 @@ public class LoginPage extends BasePage {
         DriverFactory.getDriver().get("https://hhh.codetax.com.br/");
     }
 
+    public void acessDashPage(){
+        DriverFactory.getDriver().get("https://hhh.codetax.com.br/area-do-usuario/dashboard");
+    }
+
     public void clickAcess(){
         clickButton(By.cssSelector("#home > section > header > div > div > div.col-lg-3.col-12.links > div.access > a"));
     }

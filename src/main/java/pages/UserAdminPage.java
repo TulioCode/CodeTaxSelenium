@@ -96,4 +96,29 @@ public class UserAdminPage extends BasePage {
     public String ConfirmPasswordMsg(){
         return getText(By.id("repeatPasswordMessage"));
     }
+
+
+    //Listagem
+    public void clickOptionsUserTabel(){
+        clickButton(By.xpath("//*[@id=\"userTable\"]/tr/td[8]/button"));
+    }
+
+    public void clickExcludedUser(){
+        clickButton(By.xpath("//*[@id=\"userTable\"]/tr/td[8]/div/ul/li[3]"));
+    }
+
+    //conferir msg antes de clicar
+    public String msgPreUserExcluded(){
+        return getText(By.xpath("/html/body/div[3]/div[1]/div[1]/h1"));
+    }
+
+    public void clickBtnExcluir(){
+        clickButton(By.xpath("/html/body/div[3]/div[1]/div[3]/div[2]/button[1]"));
+    }
+
+    //conferir msg de excluir  => Usuário removido com sucesso!
+    public String msgUserExcluded(){
+        return getText(By.xpath("/html/body/div[3]/div[1]/div[2]"));
+    }
+
 }

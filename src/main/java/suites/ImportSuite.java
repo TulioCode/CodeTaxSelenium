@@ -14,7 +14,7 @@ public final class ImportSuite {
 
     @AfterClass
     public static void apagaUser(){
-        //TODO:Lugar usado para apagar usuário criado na sessão (preservar massa de dados)
+
     }
 
 }
