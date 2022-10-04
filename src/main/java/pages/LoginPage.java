@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class LoginPage extends BasePage {
 
     public void acessLandingPage(){
-        DriverFactory.getDriver().get("https://hhh.codetax.com.br/");
+        DriverFactory.getDriver().get("https://hhh2.codetax.com.br/");
     }
 
     public void acessDashPage(){

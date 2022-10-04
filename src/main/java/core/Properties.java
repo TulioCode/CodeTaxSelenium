@@ -8,7 +8,7 @@ public class Properties {
 	
 	public static Browsers BROWSER = Browsers.CHROME;
 
-	public static ExecutionType EXECUTION_TYPE = ExecutionType.GRID;
+	public static ExecutionType EXECUTION_TYPE = ExecutionType.LOCAL;
 
 	public enum Browsers {
 		CHROME,
