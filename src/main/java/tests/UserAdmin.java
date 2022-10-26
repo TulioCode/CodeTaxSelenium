@@ -30,7 +30,7 @@ public class UserAdmin extends BaseTest {
         Thread.sleep(2000);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/nav/div/div[2]/a[7]/span")));
         page.openRegisterSelect();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         page.openRegisterUser();
         Thread.sleep(2000);
         page.clickRegisterNewUser();
